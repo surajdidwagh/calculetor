@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external stylesheet --> 
+    <!-- Link to Bootstrap stylesheet from a CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="operation" id="operation"></div> <!-- Display for operation -->
+        <div class="display" id="display">0</div> <!-- Display for current input -->
+        <div class="keys">
+            <!-- Buttons for various operations and numbers -->
+            <button onclick="clearDisplay()" class="key key-ac">AC</button> <!-- Button to clear display -->
+            <button onclick="calculate()" class="key key-equal">=</button> <!-- Button to perform calculation -->
+            <button onclick="appendNumber('7')" class="key">7</button>
+            <button onclick="appendNumber('8')" class="key">8</button>
+            <button onclick="appendNumber('9')" class="key">9</button>
+            <button onclick="operate('%')" class="key">%</button>
+            <button onclick="appendNumber('4')" class="key">4</button>
+            <button onclick="appendNumber('5')" class="key">5</button>
+            <button onclick="appendNumber('6')" class="key">6</button>
+            <button onclick="operate('*')" class="key">*</button>
+            <button onclick="appendNumber('1')" class="key">1</button>
+            <button onclick="appendNumber('2')" class="key">2</button>
+            <button onclick="appendNumber('3')" class="key">3</button>
+            <button onclick="operate('-')" class="key">-</button>
+            <button onclick="square()" class="key">x²</button> <!-- Button for square operation -->
+            <button onclick="appendNumber('0')" class="key">0</button>
+            <button onclick="appendNumber('.')" class="key">.</button>
+            <button onclick="operate('+')" class="key">+</button>
+            <button onclick="operate('/')" class="key">/</button>
+            <button onclick="cube()" class="key">x³</button> <!-- Button for cube operation -->
+            <button onclick="squareRoot()" class="key">√x</button> <!-- Button for square root operation -->
+            <button onclick="exponent()" class="key">e<sup>x</sup></button> <!-- Button for exponent operation -->
+        </div>
+    </div>
+
+    <script src="calculetor.js"></script> <!-- Link to the JavaScript file -->
+</body>
+
+</html>
